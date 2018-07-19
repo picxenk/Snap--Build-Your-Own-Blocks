@@ -387,7 +387,7 @@ SnapTranslator.dict.ko = {
     'rest for %n beats':
         '%n 박자 쉬기',
     'play note %note for %n beats':
-        '%note 음을 %n 박자로 연주하기',
+        '%note 음 %n 박자 연주하기',
     'change tempo by %n':
         '빠르기를 %n 만큼 바꾸기',
     'set tempo to %n bpm':
