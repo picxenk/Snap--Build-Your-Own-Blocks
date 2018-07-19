@@ -1952,10 +1952,10 @@ SpriteMorph.prototype.blockTemplates = function (category) {
     } else if (cat === 'pen') {
 
         blocks.push(block('clear'));
-        blocks.push('-');
+        // blocks.push('-');
         blocks.push(block('down'));
         blocks.push(block('up'));
-        blocks.push('-');
+        // blocks.push('-');
         blocks.push(block('setColor'));
         blocks.push(block('changeHue'));
         // blocks.push(block('setHue'));
@@ -1990,7 +1990,7 @@ SpriteMorph.prototype.blockTemplates = function (category) {
         // blocks.push('-');
         blocks.push(block('doWait'));
         // blocks.push(block('doWaitUntil'));
-        blocks.push('-');
+        // blocks.push('-');
         blocks.push(block('doForever'));
         blocks.push(block('doRepeat'));
         // blocks.push(block('doUntil'));
