@@ -1858,57 +1858,57 @@ SpriteMorph.prototype.blockTemplates = function (category) {
 
         blocks.push(block('forward'));
         blocks.push(block('turn'));
-        blocks.push(block('turnLeft'));
-        blocks.push('-');
-        blocks.push(block('setHeading'));
-        blocks.push(block('doFaceTowards'));
-        blocks.push('-');
-        blocks.push(block('gotoXY'));
-        blocks.push(block('doGotoObject'));
-        blocks.push(block('doGlide'));
-        blocks.push('-');
+        // blocks.push(block('turnLeft'));
+        // blocks.push('-');
+        // blocks.push(block('setHeading'));
+        // blocks.push(block('doFaceTowards'));
+        // blocks.push('-');
+        // blocks.push(block('gotoXY'));
+        // blocks.push(block('doGotoObject'));
+        // blocks.push(block('doGlide'));
+        // blocks.push('-');
         blocks.push(block('changeXPosition'));
-        blocks.push(block('setXPosition'));
+        // blocks.push(block('setXPosition'));
         blocks.push(block('changeYPosition'));
-        blocks.push(block('setYPosition'));
-        blocks.push('-');
+        // blocks.push(block('setYPosition'));
+        // blocks.push('-');
         blocks.push(block('bounceOffEdge'));
-        blocks.push('-');
-        blocks.push(watcherToggle('xPosition'));
-        blocks.push(block('xPosition', this.inheritsAttribute('x position')));
-        blocks.push(watcherToggle('yPosition'));
-        blocks.push(block('yPosition', this.inheritsAttribute('y position')));
-        blocks.push(watcherToggle('direction'));
-        blocks.push(block('direction', this.inheritsAttribute('direction')));
-        blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+        // blocks.push('-');
+        // blocks.push(watcherToggle('xPosition'));
+        // blocks.push(block('xPosition', this.inheritsAttribute('x position')));
+        // blocks.push(watcherToggle('yPosition'));
+        // blocks.push(block('yPosition', this.inheritsAttribute('y position')));
+        // blocks.push(watcherToggle('direction'));
+        // blocks.push(block('direction', this.inheritsAttribute('direction')));
+        // blocks.push('=');
+        // blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'looks') {
 
-        blocks.push(block('doSwitchToCostume'));
-        blocks.push(block('doWearNextCostume'));
-        blocks.push(watcherToggle('getCostumeIdx'));
-        blocks.push(block('getCostumeIdx', this.inheritsAttribute('costume #')));
-        blocks.push('-');
+        // blocks.push(block('doSwitchToCostume'));
+        // blocks.push(block('doWearNextCostume'));
+        // blocks.push(watcherToggle('getCostumeIdx'));
+        // blocks.push(block('getCostumeIdx', this.inheritsAttribute('costume #')));
+        // blocks.push('-');
         blocks.push(block('doSayFor'));
-        blocks.push(block('bubble'));
-        blocks.push(block('doThinkFor'));
-        blocks.push(block('doThink'));
-        blocks.push('-');
-        blocks.push(block('changeEffect'));
-        blocks.push(block('setEffect'));
-        blocks.push(block('clearEffects'));
-        blocks.push('-');
-        blocks.push(block('changeScale'));
-        blocks.push(block('setScale'));
-        blocks.push(watcherToggle('getScale'));
-        blocks.push(block('getScale', this.inheritsAttribute('size')));
-        blocks.push('-');
+        // blocks.push(block('bubble'));
+        // blocks.push(block('doThinkFor'));
+        // blocks.push(block('doThink'));
+        // blocks.push('-');
+        // blocks.push(block('changeEffect'));
+        // blocks.push(block('setEffect'));
+        // blocks.push(block('clearEffects'));
+        // blocks.push('-');
+        // blocks.push(block('changeScale'));
+        // blocks.push(block('setScale'));
+        // blocks.push(watcherToggle('getScale'));
+        // blocks.push(block('getScale', this.inheritsAttribute('size')));
+        // blocks.push('-');
         blocks.push(block('show'));
         blocks.push(block('hide'));
-        blocks.push('-');
-        blocks.push(block('comeToFront'));
-        blocks.push(block('goBack'));
+        // blocks.push('-');
+        // blocks.push(block('comeToFront'));
+        // blocks.push(block('goBack'));
 
     // for debugging: ///////////////
 
@@ -1929,25 +1929,25 @@ SpriteMorph.prototype.blockTemplates = function (category) {
 
     /////////////////////////////////
 
-        blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+        // blocks.push('=');
+        // blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'sound') {
 
-        blocks.push(block('playSound'));
-        blocks.push(block('doPlaySoundUntilDone'));
+        // blocks.push(block('playSound'));
+        // blocks.push(block('doPlaySoundUntilDone'));
         blocks.push(block('doStopAllSounds'));
-        blocks.push('-');
+        // blocks.push('-');
         blocks.push(block('doRest'));
         blocks.push(block('doPlayNote'));
         blocks.push(block('doSetInstrument'));
-        blocks.push('-');
-        blocks.push(block('doChangeTempo'));
-        blocks.push(block('doSetTempo'));
-        blocks.push(watcherToggle('getTempo'));
-        blocks.push(block('getTempo'));
-        blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+        // blocks.push('-');
+        // blocks.push(block('doChangeTempo'));
+        // blocks.push(block('doSetTempo'));
+        // blocks.push(watcherToggle('getTempo'));
+        // blocks.push(block('getTempo'));
+        // blocks.push('=');
+        // blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'pen') {
 
@@ -1958,115 +1958,115 @@ SpriteMorph.prototype.blockTemplates = function (category) {
         blocks.push('-');
         blocks.push(block('setColor'));
         blocks.push(block('changeHue'));
-        blocks.push(block('setHue'));
-        blocks.push('-');
-        blocks.push(block('changeBrightness'));
-        blocks.push(block('setBrightness'));
-        blocks.push('-');
-        blocks.push(block('changeSize'));
+        // blocks.push(block('setHue'));
+        // blocks.push('-');
+        // blocks.push(block('changeBrightness'));
+        // blocks.push(block('setBrightness'));
+        // blocks.push('-');
+        // blocks.push(block('changeSize'));
         blocks.push(block('setSize'));
-        blocks.push('-');
-        blocks.push(block('doStamp'));
-        blocks.push(block('floodFill'));
-        blocks.push('-');
-        blocks.push(block('reportPenTrailsAsCostume'));
-        blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+        // blocks.push('-');
+        // blocks.push(block('doStamp'));
+        // blocks.push(block('floodFill'));
+        // blocks.push('-');
+        // blocks.push(block('reportPenTrailsAsCostume'));
+        // blocks.push('=');
+        // blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'control') {
 
         blocks.push(block('receiveGo'));
         blocks.push(block('receiveKey'));
-        blocks.push(block('receiveInteraction'));
-        blocks.push(block('receiveCondition'));
-        blocks.push(block('receiveMessage'));
-        blocks.push('-');
-        blocks.push(block('doBroadcast'));
-        blocks.push(block('doBroadcastAndWait'));
-        blocks.push(watcherToggle('getLastMessage'));
-        blocks.push(block('getLastMessage'));
-        blocks.push('-');
-        blocks.push(block('doWarp'));
-        blocks.push('-');
+        // blocks.push(block('receiveInteraction'));
+        // blocks.push(block('receiveCondition'));
+        // blocks.push(block('receiveMessage'));
+        // blocks.push('-');
+        // blocks.push(block('doBroadcast'));
+        // blocks.push(block('doBroadcastAndWait'));
+        // blocks.push(watcherToggle('getLastMessage'));
+        // blocks.push(block('getLastMessage'));
+        // blocks.push('-');
+        // blocks.push(block('doWarp'));
+        // blocks.push('-');
         blocks.push(block('doWait'));
-        blocks.push(block('doWaitUntil'));
+        // blocks.push(block('doWaitUntil'));
         blocks.push('-');
         blocks.push(block('doForever'));
         blocks.push(block('doRepeat'));
-        blocks.push(block('doUntil'));
-        blocks.push('-');
+        // blocks.push(block('doUntil'));
+        // blocks.push('-');
         blocks.push(block('doIf'));
         blocks.push(block('doIfElse'));
-        blocks.push('-');
-        blocks.push(block('doReport'));
+        // blocks.push('-');
+        // blocks.push(block('doReport'));
     /*
     // old STOP variants, migrated to a newer version, now redundant
         blocks.push(block('doStopBlock'));
         blocks.push(block('doStop'));
         blocks.push(block('doStopAll'));
     */
-        blocks.push(block('doStopThis'));
+        // blocks.push(block('doStopThis'));
     /*
         // migrated to doStopThis, now redundant
         blocks.push(block('doStopOthers'));
     */
-        blocks.push('-');
-        blocks.push(block('doRun'));
-        blocks.push(block('fork'));
-        blocks.push(block('evaluate'));
-        blocks.push('-');
-        blocks.push(block('doTellTo'));
-        blocks.push(block('reportAskFor'));
-        blocks.push('-');
-        blocks.push(block('doCallCC'));
-        blocks.push(block('reportCallCC'));
-        blocks.push('-');
-        blocks.push(block('receiveOnClone'));
-        blocks.push(block('createClone'));
-        blocks.push(block('newClone'));
-        blocks.push(block('removeClone'));
-        blocks.push('-');
-        blocks.push(block('doPauseAll'));
-        blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+        // blocks.push('-');
+        // blocks.push(block('doRun'));
+        // blocks.push(block('fork'));
+        // blocks.push(block('evaluate'));
+        // blocks.push('-');
+        // blocks.push(block('doTellTo'));
+        // blocks.push(block('reportAskFor'));
+        // blocks.push('-');
+        // blocks.push(block('doCallCC'));
+        // blocks.push(block('reportCallCC'));
+        // blocks.push('-');
+        // blocks.push(block('receiveOnClone'));
+        // blocks.push(block('createClone'));
+        // blocks.push(block('newClone'));
+        // blocks.push(block('removeClone'));
+        // blocks.push('-');
+        // blocks.push(block('doPauseAll'));
+        // blocks.push('=');
+        // blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'sensing') {
 
         blocks.push(block('reportTouchingObject'));
         blocks.push(block('reportTouchingColor'));
-        blocks.push(block('reportColorIsTouchingColor'));
-        blocks.push('-');
-        blocks.push(block('doAsk'));
-        blocks.push(watcherToggle('getLastAnswer'));
-        blocks.push(block('getLastAnswer'));
-        blocks.push('-');
-        blocks.push(watcherToggle('reportMouseX'));
-        blocks.push(block('reportMouseX'));
-        blocks.push(watcherToggle('reportMouseY'));
-        blocks.push(block('reportMouseY'));
-        blocks.push(block('reportMouseDown'));
-        blocks.push('-');
-        blocks.push(block('reportKeyPressed'));
-        blocks.push('-');
-        blocks.push(block('reportRelationTo'));
-        blocks.push('-');
-        blocks.push(block('doResetTimer'));
-        blocks.push(watcherToggle('getTimer'));
-        blocks.push(block('getTimer'));
-        blocks.push('-');
-        blocks.push(block('reportAttributeOf'));
+        // blocks.push(block('reportColorIsTouchingColor'));
+        // blocks.push('-');
+        // blocks.push(block('doAsk'));
+        // blocks.push(watcherToggle('getLastAnswer'));
+        // blocks.push(block('getLastAnswer'));
+        // blocks.push('-');
+        // blocks.push(watcherToggle('reportMouseX'));
+        // blocks.push(block('reportMouseX'));
+        // blocks.push(watcherToggle('reportMouseY'));
+        // blocks.push(block('reportMouseY'));
+        // blocks.push(block('reportMouseDown'));
+        // blocks.push('-');
+        // blocks.push(block('reportKeyPressed'));
+        // blocks.push('-');
+        // blocks.push(block('reportRelationTo'));
+        // blocks.push('-');
+        // blocks.push(block('doResetTimer'));
+        // blocks.push(watcherToggle('getTimer'));
+        // blocks.push(block('getTimer'));
+        // blocks.push('-');
+        // blocks.push(block('reportAttributeOf'));
 
-        if (SpriteMorph.prototype.enableFirstClass) {
-            blocks.push(block('reportGet'));
-        }
-        blocks.push('-');
-
-        blocks.push(block('reportURL'));
-        blocks.push('-');
-        blocks.push(block('reportIsFastTracking'));
-        blocks.push(block('doSetFastTracking'));
-        blocks.push('-');
-        blocks.push(block('reportDate'));
+        // if (SpriteMorph.prototype.enableFirstClass) {
+        //     blocks.push(block('reportGet'));
+        // }
+        // blocks.push('-');
+        //
+        // blocks.push(block('reportURL'));
+        // blocks.push('-');
+        // blocks.push(block('reportIsFastTracking'));
+        // blocks.push(block('doSetFastTracking'));
+        // blocks.push('-');
+        // blocks.push(block('reportDate'));
 
     // for debugging: ///////////////
 
@@ -2089,53 +2089,53 @@ SpriteMorph.prototype.blockTemplates = function (category) {
 
 	/////////////////////////////////
 
-		blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+		// blocks.push('=');
+    //     blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'operators') {
 
-        blocks.push(block('reifyScript'));
-        blocks.push(block('reifyReporter'));
-        blocks.push(block('reifyPredicate'));
-        blocks.push('#');
-        blocks.push('-');
+        // blocks.push(block('reifyScript'));
+        // blocks.push(block('reifyReporter'));
+        // blocks.push(block('reifyPredicate'));
+        // blocks.push('#');
+        // blocks.push('-');
         blocks.push(block('reportSum'));
         blocks.push(block('reportDifference'));
         blocks.push(block('reportProduct'));
         blocks.push(block('reportQuotient'));
-        blocks.push('-');
-        blocks.push(block('reportModulus'));
-        blocks.push(block('reportRound'));
-        blocks.push(block('reportMonadic'));
-        blocks.push(block('reportRandom'));
-        blocks.push('-');
-        blocks.push(block('reportLessThan'));
-        blocks.push(block('reportEquals'));
-        blocks.push(block('reportGreaterThan'));
-        blocks.push('-');
-        blocks.push(block('reportAnd'));
-        blocks.push(block('reportOr'));
-        blocks.push(block('reportNot'));
-        blocks.push(block('reportBoolean'));
-        blocks.push('-');
-        blocks.push(block('reportJoinWords'));
-        blocks.push(block('reportTextSplit'));
-        blocks.push(block('reportLetter'));
-        blocks.push(block('reportStringSize'));
-        blocks.push('-');
-        blocks.push(block('reportUnicode'));
-        blocks.push(block('reportUnicodeAsLetter'));
-        blocks.push('-');
-        blocks.push(block('reportIsA'));
-        blocks.push(block('reportIsIdentical'));
-
-        if (true) { // (Process.prototype.enableJS) {
-            blocks.push('-');
-            blocks.push(block('reportJSFunction'));
-            if (Process.prototype.enableCompiling) {
-	            blocks.push(block('reportCompiled'));
-            }
-        }
+        // blocks.push('-');
+        // blocks.push(block('reportModulus'));
+        // blocks.push(block('reportRound'));
+        // blocks.push(block('reportMonadic'));
+        // blocks.push(block('reportRandom'));
+        // blocks.push('-');
+        // blocks.push(block('reportLessThan'));
+        // blocks.push(block('reportEquals'));
+        // blocks.push(block('reportGreaterThan'));
+        // blocks.push('-');
+        // blocks.push(block('reportAnd'));
+        // blocks.push(block('reportOr'));
+        // blocks.push(block('reportNot'));
+        // blocks.push(block('reportBoolean'));
+        // blocks.push('-');
+        // blocks.push(block('reportJoinWords'));
+        // blocks.push(block('reportTextSplit'));
+        // blocks.push(block('reportLetter'));
+        // blocks.push(block('reportStringSize'));
+        // blocks.push('-');
+        // blocks.push(block('reportUnicode'));
+        // blocks.push(block('reportUnicodeAsLetter'));
+        // blocks.push('-');
+        // blocks.push(block('reportIsA'));
+        // blocks.push(block('reportIsIdentical'));
+        //
+        // if (true) { // (Process.prototype.enableJS) {
+        //     blocks.push('-');
+        //     blocks.push(block('reportJSFunction'));
+        //     if (Process.prototype.enableCompiling) {
+	      //       blocks.push(block('reportCompiled'));
+        //     }
+        // }
 
     // for debugging: ///////////////
 
@@ -2154,103 +2154,103 @@ SpriteMorph.prototype.blockTemplates = function (category) {
 
     /////////////////////////////////
 
-        blocks.push('=');
-        blocks.push(this.makeBlockButton(cat));
+        // blocks.push('=');
+        // blocks.push(this.makeBlockButton(cat));
 
     } else if (cat === 'variables') {
 
-        button = new PushButtonMorph(
-            null,
-            function () {
-                new VariableDialogMorph(
-                    null,
-                    addVar,
-                    myself
-                ).prompt(
-                    'Variable name',
-                    null,
-                    myself.world()
-                );
-            },
-            'Make a variable'
-        );
-        button.userMenu = helpMenu;
-        button.selector = 'addVariable';
-        button.showHelp = BlockMorph.prototype.showHelp;
-        blocks.push(button);
-
-        if (this.deletableVariableNames().length > 0) {
-            button = new PushButtonMorph(
-                null,
-                function () {
-                    var menu = new MenuMorph(
-                        myself.deleteVariable,
-                        null,
-                        myself
-                    );
-                    myself.deletableVariableNames().forEach(function (name) {
-                        menu.addItem(name, name);
-                    });
-                    menu.popUpAtHand(myself.world());
-                },
-                'Delete a variable'
-            );
-            button.userMenu = helpMenu;
-            button.selector = 'deleteVariable';
-            button.showHelp = BlockMorph.prototype.showHelp;
-            blocks.push(button);
-        }
-
-        blocks.push('-');
-
-        varNames = this.reachableGlobalVariableNames(true);
-        if (varNames.length > 0) {
-            varNames.forEach(function (name) {
-                blocks.push(variableWatcherToggle(name));
-                blocks.push(variableBlock(name));
-            });
-            blocks.push('-');
-        }
-
-        varNames = this.allLocalVariableNames(true);
-        if (varNames.length > 0) {
-            varNames.forEach(function (name) {
-                blocks.push(variableWatcherToggle(name));
-                blocks.push(variableBlock(name, true));
-            });
-            blocks.push('-');
-        }
-
-        blocks.push(block('doSetVar'));
-        blocks.push(block('doChangeVar'));
-        blocks.push(block('doShowVar'));
-        blocks.push(block('doHideVar'));
-        blocks.push(block('doDeclareVariables'));
-
-    // inheritance:
-
-        if (StageMorph.prototype.enableInheritance) {
-            blocks.push('-');
-            blocks.push(block('doDeleteAttr'));
-        }
-
-    ///////////////////////////////
-
-        blocks.push('=');
-
-        blocks.push(block('reportNewList'));
-        blocks.push('-');
-        blocks.push(block('reportCONS'));
-        blocks.push(block('reportListItem'));
-        blocks.push(block('reportCDR'));
-        blocks.push('-');
-        blocks.push(block('reportListLength'));
-        blocks.push(block('reportListContainsItem'));
-        blocks.push('-');
-        blocks.push(block('doAddToList'));
-        blocks.push(block('doDeleteFromList'));
-        blocks.push(block('doInsertInList'));
-        blocks.push(block('doReplaceInList'));
+    //     button = new PushButtonMorph(
+    //         null,
+    //         function () {
+    //             new VariableDialogMorph(
+    //                 null,
+    //                 addVar,
+    //                 myself
+    //             ).prompt(
+    //                 'Variable name',
+    //                 null,
+    //                 myself.world()
+    //             );
+    //         },
+    //         'Make a variable'
+    //     );
+    //     button.userMenu = helpMenu;
+    //     button.selector = 'addVariable';
+    //     button.showHelp = BlockMorph.prototype.showHelp;
+    //     blocks.push(button);
+    //
+    //     if (this.deletableVariableNames().length > 0) {
+    //         button = new PushButtonMorph(
+    //             null,
+    //             function () {
+    //                 var menu = new MenuMorph(
+    //                     myself.deleteVariable,
+    //                     null,
+    //                     myself
+    //                 );
+    //                 myself.deletableVariableNames().forEach(function (name) {
+    //                     menu.addItem(name, name);
+    //                 });
+    //                 menu.popUpAtHand(myself.world());
+    //             },
+    //             'Delete a variable'
+    //         );
+    //         button.userMenu = helpMenu;
+    //         button.selector = 'deleteVariable';
+    //         button.showHelp = BlockMorph.prototype.showHelp;
+    //         blocks.push(button);
+    //     }
+    //
+    //     blocks.push('-');
+    //
+    //     varNames = this.reachableGlobalVariableNames(true);
+    //     if (varNames.length > 0) {
+    //         varNames.forEach(function (name) {
+    //             blocks.push(variableWatcherToggle(name));
+    //             blocks.push(variableBlock(name));
+    //         });
+    //         blocks.push('-');
+    //     }
+    //
+    //     varNames = this.allLocalVariableNames(true);
+    //     if (varNames.length > 0) {
+    //         varNames.forEach(function (name) {
+    //             blocks.push(variableWatcherToggle(name));
+    //             blocks.push(variableBlock(name, true));
+    //         });
+    //         blocks.push('-');
+    //     }
+    //
+    //     blocks.push(block('doSetVar'));
+    //     blocks.push(block('doChangeVar'));
+    //     blocks.push(block('doShowVar'));
+    //     blocks.push(block('doHideVar'));
+    //     blocks.push(block('doDeclareVariables'));
+    //
+    // // inheritance:
+    //
+    //     if (StageMorph.prototype.enableInheritance) {
+    //         blocks.push('-');
+    //         blocks.push(block('doDeleteAttr'));
+    //     }
+    //
+    // ///////////////////////////////
+    //
+    //     blocks.push('=');
+    //
+    //     blocks.push(block('reportNewList'));
+    //     blocks.push('-');
+    //     blocks.push(block('reportCONS'));
+    //     blocks.push(block('reportListItem'));
+    //     blocks.push(block('reportCDR'));
+    //     blocks.push('-');
+    //     blocks.push(block('reportListLength'));
+    //     blocks.push(block('reportListContainsItem'));
+    //     blocks.push('-');
+    //     blocks.push(block('doAddToList'));
+    //     blocks.push(block('doDeleteFromList'));
+    //     blocks.push(block('doInsertInList'));
+    //     blocks.push(block('doReplaceInList'));
 
     // for debugging: ///////////////
 
@@ -2272,15 +2272,15 @@ SpriteMorph.prototype.blockTemplates = function (category) {
     /////////////////////////////////
 
         blocks.push('=');
-
-        if (StageMorph.prototype.enableCodeMapping) {
-            blocks.push(block('doMapCodeOrHeader'));
-            blocks.push(block('doMapValueCode'));
-            blocks.push(block('doMapListCode'));
-            blocks.push('-');
-            blocks.push(block('reportMappedCode'));
-            blocks.push('=');
-        }
+        //
+        // if (StageMorph.prototype.enableCodeMapping) {
+        //     blocks.push(block('doMapCodeOrHeader'));
+        //     blocks.push(block('doMapValueCode'));
+        //     blocks.push(block('doMapListCode'));
+        //     blocks.push('-');
+        //     blocks.push(block('reportMappedCode'));
+        //     blocks.push('=');
+        // }
 
         blocks.push(this.makeBlockButton());
 
@@ -2378,7 +2378,7 @@ SpriteMorph.prototype.freshPalette = function (category) {
     palette.growth = new Point(0, MorphicPreferences.scrollBarSize);
 
     // toolbar:
-    
+
     palette.toolBar = new AlignmentMorph('column');
 
     searchButton = new PushButtonMorph(
