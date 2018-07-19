@@ -198,7 +198,8 @@ IDE_Morph.prototype.scriptsTexture = function () {
     return pic;
 };
 
-IDE_Morph.prototype.setDefaultDesign();
+// IDE_Morph.prototype.setDefaultDesign();
+IDE_Morph.prototype.setFlatDesign();
 
 // IDE_Morph instance creation:
 
@@ -2174,9 +2175,9 @@ IDE_Morph.prototype.refreshIDE = function () {
 // IDE_Morph settings persistance
 
 IDE_Morph.prototype.applySavedSettings = function () {
-    var design = this.getSetting('design'),
+    var design = 'flat', //this.getSetting('design'),
         zoom = this.getSetting('zoom'),
-        language = this.getSetting('language'),
+        language = 'ko', //this.getSetting('language'),
         click = this.getSetting('click'),
         longform = this.getSetting('longform'),
         longurls = this.getSetting('longurls'),
