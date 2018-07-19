@@ -415,11 +415,11 @@ SnapTranslator.dict.ko = {
     'pen up':
         '펜 올리기',
     'set pen color to %clr':
-        '펜 색깔을 %clr 으로 정하기',
+        '펜 색깔 %clr 정하기',
     'change pen color by %n':
-        '펜 색깔을 %n 만큼 바꾸기',
+        '펜 색깔 %n 바꾸기',
     'set pen color to %n':
-        '펜 색깔을 %n (으)로 정하기',
+        '펜 색깔 %n 정하기',
     'change pen shade by %n':
         '펜 음영을 %n 만큼 바꾸기',
     'set pen shade to %n':
@@ -427,7 +427,7 @@ SnapTranslator.dict.ko = {
     'change pen size by %n':
         '펜 굵기를 %n 만큼 바꾸기',
     'set pen size to %n':
-        '펜 굵기를 %n (으)로 정하기',
+        '펜 굵기 %n 정하기',
     'stamp':
         '도장찍기',
 
