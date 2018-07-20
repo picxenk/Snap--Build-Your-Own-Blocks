@@ -440,6 +440,8 @@ SnapTranslator.dict.ko = {
         '이 스프라이트를 클릭했을 때',
     'when I receive %msgHat':
         '%msgHat 을(를) 받았을 때',
+    'when %b':
+        '%b 일 때',
     'broadcast %msg':
         '%msg 방송하기',
     'broadcast %msg and wait':
