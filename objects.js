@@ -1978,7 +1978,7 @@ SpriteMorph.prototype.blockTemplates = function (category) {
         blocks.push(block('receiveGo'));
         blocks.push(block('receiveKey'));
         // blocks.push(block('receiveInteraction'));
-        // blocks.push(block('receiveCondition'));
+        blocks.push(block('receiveCondition'));
         // blocks.push(block('receiveMessage'));
         // blocks.push('-');
         // blocks.push(block('doBroadcast'));
